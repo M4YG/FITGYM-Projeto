@@ -1,0 +1,122 @@
+:root {
+  --color1: #1c0b2b;
+  --color2: #301c41; 
+  --color3: #413b6b; 
+  --color4: #5c65c0; 
+  --color5: #6f95ff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #42AAEB, #A6C0FF);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  max-width: 420px;
+  width: 100%;
+  background: #fff;
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.matricula-container {
+  max-width: 420px;
+  width: 100%;
+  background: #fff;
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--color1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="file"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background: var(--color5);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+button:hover {
+  background: var(--color4);
+}
+
+.contato {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--color2);
+  line-height: 1.4;
+}
+
+.matricula-opcao {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.matricula-opcao a {
+  color: var(--color4);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.matricula-opcao a:hover {
+  text-decoration: underline;
+  color: var(--color5);
+}
+
+.login-opcao {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-opcao a {
+  color: var(--color4);
+  font-weight: bold;
+  text-decoration: none;
+}
+.login-opcao a:hover {
+  text-decoration: underline;
+  color: var(--color5);
+}
