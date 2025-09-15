@@ -3,30 +3,20 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Planos from "./components/Planos/cardsplanos";
 import './App.css'
-const planos = [
-  {
-    titulo: "PLANO FIDELIDADE 12 MESES",
-    duracao: "12 MESES",
-    preco: 389, 
-  },
-  {
-    titulo: "PLANO FIDELIDADE 6 MESES",
-    duracao: "6 MESES",
-    preco: 499,
-  },
-  {
-    titulo: "PLANO TRIMESTRAL",
-    duracao: "3 Mes",
-    preco: 700,
-  },
-  
-];
+import { BrowserRouter } from 'react-router-dom';
+import Header from './components/header/header';
+import Paths from './routes/paths';
+
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Planos />
+      <BrowserRouter>
+        <Header/>
+        <Paths/>
+      </BrowserRouter>
     </>
   )
 }

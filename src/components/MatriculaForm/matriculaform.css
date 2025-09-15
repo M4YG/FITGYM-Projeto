@@ -1,5 +1,4 @@
-
-body {
+.Forms-MainContainer {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #42AAEB, #A6C0FF);
   margin: 0;
@@ -11,16 +10,18 @@ body {
 }
 
 .form-container {
-  max-width: 420px;
+  max-width: 600px;
   width: 100%;
   background: #fff;
+  display: flex;
+  flex-direction: column;
   padding: 35px 25px;
   border-radius: 15px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .matricula-container {
-  max-width: 420px;
+  max-width: 550px;
   width: 100%;
   background: #fff;
   padding: 35px 25px;
@@ -94,22 +95,6 @@ button:hover {
 }
 
 .matricula-opcao a:hover {
-  text-decoration: underline;
-  color: var(--color5);
-}
-
-.login-opcao {
-  margin-top: 15px;
-  text-align: center;
-  font-size: 14px;
-}
-
-.login-opcao a {
-  color: var(--color4);
-  font-weight: bold;
-  text-decoration: none;
-}
-.login-opcao a:hover {
   text-decoration: underline;
   color: var(--color5);
 }

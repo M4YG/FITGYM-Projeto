@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.HeaderContainer {
+    background-color: #5c65c0;
+    padding: 12px 5px;
+}
+.HeaderNavContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px;
+    font-family: "Noto Sans";
+}
+.HeaderNavContainer a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.HeaderNavContainer ul {
+    display: flex;
+    margin: 0px 5px;
+    gap: 25px;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+.HeaderNavContainer ul a:hover {
+    color: #000000;
+    transition: linear 200ms;
+}
+.HeaderLogoNav {
+    width: 50px;
+}
+.HeaderLogoNav:hover {
+    filter: invert(100%);
+    transition: linear 200ms;
+}
