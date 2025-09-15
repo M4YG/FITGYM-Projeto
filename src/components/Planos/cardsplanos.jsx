@@ -14,12 +14,12 @@ const planos = [
   },
   {
     titulo: "PLANO TRIMESTRAL",
-    duracao: "3 MES",
+    duracao: "3 MESES",
     preco: 200,
   },
   {
     titulo: "PLANO MENSAL",
-    duracao: "1 MES",
+    duracao: "1 MÊS",
     preco: 80,
   },
   {
@@ -48,9 +48,9 @@ export default function Planos() {
                       {plano.duracao.split(" ")[1]}
                     </p>
                   </div>
-                  <div>
+                  <div className="planos-text-container">
                     <h5 className="fw-bold">{plano.titulo}</h5>
-                    <p className="mb-0">Mensalidade R$ {plano.preco},00</p>
+                    <p className="mb-0" id="mensalidade-text">Mensalidade R$ {plano.preco},00</p>
                   </div>
                 </div>
 

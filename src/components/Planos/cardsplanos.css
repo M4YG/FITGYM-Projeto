@@ -60,3 +60,7 @@ body {
   background-color: #6f95ff; /* cor5 */
   color: #1c0b2b; /* contraste */
 }
+
+.fw-bold, #mensalidade-text {
+  text-align: start;
+}
