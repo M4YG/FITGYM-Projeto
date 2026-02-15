@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Matrícula - FITGYM</title>
+  <link rel="stylesheet" href="fitgym.css" />
+</head>
+<body>
+
+  <div class="form-container">
+    <h2 class="title">Matrícula</h2>
+    
+    <form id="matriculaForm" class="form">
+      <input type="text" name="nome" placeholder="Nome" required>
+
+      <input type="email" name="email" placeholder="Email" required>
+
+      <input type="password" name="senha" placeholder="Senha" required>
+      <input type="password" name="confirmarSenha" placeholder="Confirmar Senha" required>
+      
+      <div class="row">
+        <input type="text" name="ddd" placeholder="DDD" required>
+        <input type="text" name="telefone" placeholder="Telefone" required>
+      </div>
+
+      <input type="file" name="foto">
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div class="contato">
+      <p>Em caso de dúvidas, entre em contato pelo email <strong>contato@fitgym.com</strong></p>
+      <p>ou pelo telefone <strong>4002-8922</strong></p>
+    </div>
+
+    <div class="login-opcao">
+      <p>Já possui conta? <a href="login.html">Faça login</a></p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("matriculaForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Site temporariamente fora do ar. Por favor, tente novamente mais tarde.");
+    });
+  </script>
+</body>
+</html>
